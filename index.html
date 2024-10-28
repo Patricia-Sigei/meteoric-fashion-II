@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteorical Fashion</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- The nav bar and search button go here -->
+    <header class="header-container">
+        <h1>Meteorical Fashion</h1>
+        <h2>Fashion Forecast: Dress Right, Shine Bright</h2> 
+        <nav id="nav">
+            <ul>
+                <li><a href="#cold">Cold</a></li>
+                <li><a href="#moderate">Moderate</a></li>
+                <li><a href="#hot">Hot</a></li>
+            </ul>
+        </nav>
+        <section id="filter">
+            <input type="text" placeholder="Search outfits..." aria-label="Search outfits">
+            <button type="button">Search</button>
+        </section>
+    </header>
+
+    <main class="content-container">
+        <section id="weather-info">
+            <h1>Forecast Your Fashion: Dress to Impress, No Matter the Weather</h1>
+        </section>
+    </main>
+
+    <div class="card-container">
+        <h2>Outfits</h2>
+        <div class="card" id="cold">
+            <h3>Cold</h3>
+            <p>Wear heavy winter clothing, like a coat, gloves, and boots.</p>
+        </div>
+        <div class="card" id="moderate">
+            <h3>Moderate</h3>
+            <p>Light jacket or sweater is ideal for moderate temperatures.</p>
+        </div>
+        <div class="card" id="hot">
+            <h3>Hot</h3>
+            <p>Opt for light and breathable fabrics to stay cool.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Meteorical Fashion. All rights reserved.</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
