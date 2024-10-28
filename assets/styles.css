@@ -6,7 +6,7 @@ body {
 }
 
 .header-container {
-    background-color: grey;
+    background-color: rgb(214, 189, 214);
     color: white;
     display: flex;
     flex-direction: column;
