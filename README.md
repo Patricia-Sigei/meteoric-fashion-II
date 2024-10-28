@@ -36,29 +36,22 @@ To get a local copy of this project up and running, follow these steps:
 3. Open the index.html file in your web browser.
 
 ## File Structure
+`meteorial-fashion/
+    │
+    ├── assets/               
+    │      └── styles.css         
+    │
+    ├── html files/         
+    │   ├── cold.html        
+    │   ├── moderate.html    
+    │   ├── hot.html         
+    │   └── signup.html      
+    │
+    ├── src/                  
+    │   └── script.js         
+    │
+    └── index.html`
 
-meteorical-fashion/
-
-│
-├── assets/
-│
-│   ├── styles.css      
-│
-│
-├── html files/   
-│
-│   ├── cold.html        
-│   ├── moderate.html    
-│   ├── hot.html         
-│   └── signup.html  
-│
-│
-├── src/
-│
-│   ├── script.js  
-│
-│
-├── index.html         
 
 ## Usage
 
