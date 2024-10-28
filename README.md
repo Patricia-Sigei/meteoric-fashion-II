@@ -38,18 +38,26 @@ To get a local copy of this project up and running, follow these steps:
 ## File Structure
 
 meteorical-fashion/
+
 │
+
 ├── assets/
+
 │   ├── styles.css      
 │
-├── html files/              
+
+├── html files/   
+
 │   ├── cold.html        
 │   ├── moderate.html    
 │   ├── hot.html         
-│   └── signup.html      
+│   └── signup.html  
+
 │
 ├── src/
-│   ├── script.js     
+
+│   ├── script.js  
+
 │
 ├── index.html         
 
