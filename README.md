@@ -27,7 +27,7 @@ To get a local copy of this project up and running, follow these steps:
 
 1. Clone the repository
    
-   git clone https://github.com/patricia-sigei/meteorical-fashion.git
+   git clone https://github.com/Patricia-Sigei/meteoric-fashion-II.git 
 
 2. Navigate to the project directory:
 
@@ -40,24 +40,23 @@ To get a local copy of this project up and running, follow these steps:
 meteorical-fashion/
 
 │
-
 ├── assets/
-
+│
 │   ├── styles.css      
 │
-
+│
 ├── html files/   
-
+│
 │   ├── cold.html        
 │   ├── moderate.html    
 │   ├── hot.html         
 │   └── signup.html  
-
+│
 │
 ├── src/
-
+│
 │   ├── script.js  
-
+│
 │
 ├── index.html         
 
@@ -71,4 +70,8 @@ meteorical-fashion/
 ## License
 
 - This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgements
+
+- Inspired by the need for fashion recommendations based on weather conditions.
 
