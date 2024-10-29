@@ -36,7 +36,7 @@ To get a local copy of this project up and running, follow these steps:
 3. Open the index.html file in your web browser.
 
 ## File Structure
-`meteorial-fashion/
+meteorial-fashion/
     │
     ├── assets/               
     │      └── styles.css         
@@ -50,7 +50,7 @@ To get a local copy of this project up and running, follow these steps:
     ├── src/                  
     │   └── script.js         
     │
-    └── index.html`
+    └── index.html
 
 
 ## Usage
