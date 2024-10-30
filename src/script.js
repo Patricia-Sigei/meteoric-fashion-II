@@ -47,7 +47,32 @@ function dressCode(temperature) {
         return ['Dress lightly', 'Stay hydrated'];
     }
 }
+// function to generate for outfits based on temperature
+function generateOutfit(temperature) {
+    outfitSuggestions.innerHTML = '';
 
+    let outfits = [];
+
+    if (temperature < 10) {
+        outfits = [
+            { type: 'Casual Wear', description: 'Cozy sweater and jeans.' },
+            { type: 'Official Wear', description: 'Formal coat with trousers.' },
+            { type: 'Trendy Wear', description: 'Chic winter dress with boots.' }
+        ];
+    } else if (temperature >= 10 && temperature < 25) {
+        outfits = [
+            { type: 'Casual Wear', description: 'Light jacket and long sleeves.' },
+            { type: 'Official Wear', description: 'Smart blazer with a shirt.' },
+            { type: 'Trendy Wear', description: 'Layered top with a stylish scarf.' }
+        ];
+    } else {
+        outfits = [
+            { type: 'Casual Wear', description: 'T-shirt and shorts.' },
+            { type: 'Official Wear', description: 'Lightweight shirt with chinos.' },
+            { type: 'Trendy Wear', description: 'Summer dress and sandals.' }
+        ];
+    }
+}
 
 // Fetch and display weather and dress code advice for Nairobi
 fetchWeather('Nairobi');
