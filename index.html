@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meteorical Fashion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container text-center mb-4">
         <h1>Meteorical Fashion</h1>
-        <nav id="nav">
-
-                <a href="#home">Home</a>
-                <a href="#contacts">Contacts</a></li>
-                <a href="html files/cold.html">Cold Weather Wear</a>
-                <a href="html files/moderate.html">Moderate Weather Wear</a>
-                <a href="html files/hot.html">Hot Weather Wear</a>
+        <nav id="nav" class="mb-3" role="navigation">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#contacts" class="nav-link">Contacts</a>
+            <a href="html files/cold.html" class="nav-link">Cold Weather Wear</a>
+            <a href="html files/moderate.html" class="nav-link">Moderate Weather Wear</a>
+            <a href="html files/hot.html" class="nav-link">Hot Weather Wear</a>
         </nav>
-        <section id="filter">
-            <input type="text" placeholder="Search outfits..." aria-label="Search outfits">
-            <button type="button">Search</button>
-                <p><a href="html files/signup.html">Sign Up</a></li></p>
+        <section id="filter" class="mb-4">
+            <input type="text" placeholder="Search outfits..." aria-label="Search outfits" class="form-control d-inline-block" style="width: auto;">
+            <button type="button" class="btn btn-primary">Search</button>
+            <p><a href="html files/signup.html">Sign Up</a></p>
         </section>
     </header>
 
-    <main class="content-container">
-        <section id="weather-info">
-            <h1>Forecast Your Fashion: Dress to Impress</h1>
+    <main class="card-container container" id="content-container">
+        <section class="card mb-4" id="weather-info">
+            <div class="card-body">
+                <h1>Forecast Your Fashion: Dress to Impress</h1>
+            </div>
         </section>
-        <section id="outfit-suggestions">
-
+        
+      
+        <section class="card-deck" id="outfit-suggestions">
+            <!-- Outfit cards will be injected here -->
         </section>
     </main>
         
-    <footer class="footer">
+    <footer class="footer text-center mt-4">
         <p>&copy; 2024 Meteorical Fashion. All rights reserved.</p>
     </footer>
 

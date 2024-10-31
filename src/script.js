@@ -3,22 +3,20 @@ const outfitSuggestions = document.getElementById('outfit-suggestions');
 
 // Function to fetch weather data from WeatherAPI
 async function fetchWeather(city) {
-    const apiKey = 'd3a69d238edd4de1bea83654242910'; // Replace with your actual API key
+    const apiKey = 'd3a69d238edd4de1bea83654242910'; 
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
     try {
-        const response = await axios.get(url); // Fetch weather data
-        const temperature = response.data.current.temp_c; // Get temperature
-        const condition = response.data.current.condition.text; // Get condition
+        const response = await axios.get(url); 
+        const temperature = response.data.current.temp_c; 
+        const condition = response.data.current.condition.text; 
 
-        // Get dress code advice based on the temperature
+       
         const dressCodeAdvice = dressCode(temperature);
 
-        // Display the weather info and dress code advice
         displayWeatherInfo(temperature, condition, dressCodeAdvice);
 
-        // Generate outfit cards based on temperature
-        generateOutfitCards(temperature);
+        generateOutfit(temperature);
 
     } catch (error) {
         console.error('Error fetching weather data:', error);
@@ -34,7 +32,7 @@ function displayWeatherInfo(temperature, condition, dressCodeAdvice) {
         <p>Advice: ${dressCodeAdvice[0]} - ${dressCodeAdvice[1]}</p>
     `;
 
-    weatherInfo.innerHTML += weatherContent; // Append to weather info
+    weatherInfo.innerHTML += weatherContent; 
 }
 
 // Function to predict what to wear based on temperature
@@ -74,5 +72,5 @@ function generateOutfit(temperature) {
     }
 }
 
-// Fetch and display weather and dress code advice for Nairobi
+
 fetchWeather('Nairobi');
